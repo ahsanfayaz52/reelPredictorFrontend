@@ -35,7 +35,7 @@ export default function App() {
     formData.append("caption", caption);
   
     try {
-      const res = await fetch("http://127.0.0.1:9006/upload-reel/", {
+      const res = await fetch("https://reelpredictorbackend.onrender.com/upload-reel/", {
         method: "POST",
         body: formData,
       });
